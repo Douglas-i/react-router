@@ -8,8 +8,7 @@ const ListPosts = ({ url }) => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        buscar(url, setPosts)
-        console.log(posts)
+        buscar(url, setPosts)        
     }, [url])
 
     return (

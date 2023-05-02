@@ -3,7 +3,7 @@ import "../assets/css/blog.css"
 import { buscar } from '../api/api'
 import ListCategories from '../Components/ListCategories'
 import ListPosts from '../Components/ListPosts'
-// import SubCategoria from './SubCategoria'
+import SubCategoria from './SubCategorias'
 import { useParams, Routes, Route, Link, useResolvedPath } from 'react-router-dom'
 
 const Categoria = () => {    
@@ -37,7 +37,7 @@ const Categoria = () => {
             </ul>      
             <Routes>
                 <Route path='/' element={<ListPosts url={`/posts?categoria=${id}`} />} />
-                {/* <Route path='/:subcategoria' element={<SubCategoria />} /> */}
+                <Route path='/:subcategoria' element={<SubCategoria />} />
             </Routes>
         </>
     )
