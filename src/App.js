@@ -11,17 +11,6 @@ import  {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
 
-  /*const location = window.location.pathname;
-  console.log(location);
-
-  const Router = () => {
-    if(location === '/'){
-      return <Home />
-    } else {
-      return <Sobre />
-    }
-  }*/
-
   return (    
     <Router>
       <Header />
